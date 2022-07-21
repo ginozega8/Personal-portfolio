@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #610094;
+}
+
+p {
+    font-size: 1.5rem;
+    color: white;
+    z-index: 1;
+}
+
+/*Nav Bar*/
+nav {
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    justify-content:right;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 99;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+nav button {
+    position: fixed;
+    left: 20px;
+    padding: 5px 30px 5px 30px;
+    color: #9b1ddf;
+    font-family: 'Quantico', sans-serif;
+    letter-spacing: 3px;
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+nav a {
+    padding: 5px 30px 5px 30px;
+    font-size: 1.5rem;
+    transition: 0.5s all;
+    color:#9b1ddf;
+    font-family: 'Quantico', sans-serif;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: #d18cf7;
+}
+
+a {
+    text-decoration: none;
+}
+/*Nav Bar end*/
+
+/*Welcome Section*/
+
+h1 {
+    font-size: 4rem;
+    color: #610094;
+    z-index: 1;
+}
+
+
+
+#profile-img {
+    margin: 20px 0px 20px 0px;
+    width: 15%;
+    border-radius: 500px;
+    box-shadow: 0 0 10px 2px #610094;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#profile-img:hover {
+    transform: scale(1.2);
+}
+
+/*video*/
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+/*video end*/
+
+/*Welcome Section end*/
+
+
+/*About Section*/
+.about-me {
+    display: inline-block;
+    text-align: center;
+    background-color: #131316;
+    }
+
+.about-text {
+    background-color: #610094;
+    padding: 50px 100px 50px 100px;
+}
+
+.about-text h2 {
+    color: #000000;
+}
+
+.about-text p {
+    color: #cacaca;
+}
+
+.about-list {
+    margin-top: 50px;
+}
+
+ul {
+    list-style:none;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+}
+    ul li {
+        font-size: 1.5rem;
+        margin: 50px;
+        color: #ffffff;
+        border-style: solid;
+        padding: 20px;
+        background-color: #000000;
+    }
+
+
+
+/*About Section end*/
+
+/*Projects Section*/
+.my_projects {
+    background-color: #131316;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.5s all;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-tile {
+    transition: 0.3s all;
+    margin: 20px 0px 20px 0px;
+}
+
+.project-tile:hover{
+    transform:scale(1.05);
+    
+}
+
+.project-tile:hover .project-img {
+    filter: opacity(0.1);
+    filter:blur(2px);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: rgba(135, 4, 196, 0.904);
+  }
+
+.project-tile:hover .centered {
+    display: block;
+}
+
+.project-tile p {
+    background-color: #610094;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.more_projects {
+    display: inline-block;
+    font-size: 24px;
+    margin: 40px 0px 40px 0px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #610094;
+}
+
+.more_projects:hover {
+    transform: scale(1.2);
+    color: #9b1ddf;
+}
+
+
+/*Projects Section end*/
+
+/*Contact Section*/
+#contact {
+    background-color: #610094;
+    text-align: center;
+}
+#contact h2 {
+    color: #000000;
+    padding-top: 40px;
+}
+
+
+
+.logos {
+    width: 20%;
+}
+
+.social_media {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.social_media button {
+    margin: 2rem;
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+    transition: 0.5s all;
+    position: relative;
+    top: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.social_media button a {
+    color:black;
+    transition: 0.5s all;
+}
+
+.social_media button:hover {
+    top: -10px;
+    color: aliceblue;
+}
+
+.social_media button a:hover {
+    top: -10px;
+    color: aliceblue;
+}
+
+
+/*ToolTips*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    font-size: 14px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+@media screen and (max-width:1224px) {
+
+    nav a {
+        font-size: 16px;
+    }
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    box-sizing: content-box;
+}
+
+#profile-img {
+    width: 30%;
+    
+}
+
+.social_media {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.social_media a {
+    margin: 1rem;
+}
+
+
+
+
+.about-text {
+    background-color: #610094;
+}
+
+.about {
+    background: #131316;
+}
+
+.projects {
+    grid-template-columns: 80%;
+    grid-column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+ul li {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logos {
+    width: 10%;
+}
+
+}
+
+@media screen and (max-width:720px) {
+    nav a:active {
+        transform: scale(1.2);
+        color: #d18cf7;
+    }
+    nav button {
+        position: static;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: none;
+    }
+
+
+    #profile-img {
+        width: 40%;
+        
+    }
+
+    .social_media a {
+        font-size: 24px;
+    }
+
+    .about-text {
+        padding: 0px 30px 0px 30px;
+    }
+    
+    .logos {
+        width: 15%;
+    }
+}

@@ -149,6 +149,7 @@ ul {
         font-size: 1.5rem;
         margin: 50px;
         color: #ffffff;
+        border-radius: 10px;
         border-style: solid;
         padding: 20px;
         background-color: #000000;
@@ -338,9 +339,6 @@ ul {
     flex-direction: column;
 }
 
-ul li {
-    box-sizing: content-box;
-}
 
 #profile-img {
     width: 30%;
@@ -377,10 +375,6 @@ ul li {
     text-align: center;
 }
 
-ul li {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .logos {
     width: 10%;

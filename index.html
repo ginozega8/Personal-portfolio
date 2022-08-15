@@ -11,12 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Quantico:ital@1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
 
 <body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <nav id="navbar">
     <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/v1660339203/Portfolio/gino_dev-removebg-preview_smaval.png" width="50" height="50" />
     <a class="nav-link" href="#welcome-section">Welcome</a>
@@ -175,7 +178,7 @@
     <h2 class="projects-section-title">Here is some of my work!</h2>
   
     <div class="projects">
-      <div class="project-tile">
+      <div class="project-tile" data-aos="zoom-in>">
         <h3 class="project-title">Drum Machine</h3>
           <a href="https://ginosdrummachine.netlify.app" target="_blank"><img
             src="https://res.cloudinary.com/dgiqi5urn/image/upload/v1660253296/Portfolio/184006493-c039330e-d78d-4eec-b231-67ff580e6aae_omb3bb.png"
@@ -191,7 +194,7 @@
           </div>
       </div>
   
-      <div class="project-tile">
+      <div class="project-tile" data-aos="zoom-in">
         <h3 class="project-title">Mini-apps</h3>
           <a href="https://reactminiapps.netlify.app" target="_blank"><img
             src="https://res.cloudinary.com/dgiqi5urn/image/upload/v1658949746/Portfolio/Captura_de_pantalla_2022-07-27_162204_r8rrhf.png"
@@ -207,7 +210,7 @@
          </div>
       </div>
   
-      <div class="project-tile">
+      <div class="project-tile" data-aos="zoom-in">
           <h3 class="project-title">Todo List</h3>
           <a href="https://areallyaweasometodolist.netlify.app" target="_blank"><img
             src="https://res.cloudinary.com/dgiqi5urn/image/upload/v1658428226/Portfolio/Captura_de_pantalla_2022-07-21_153040_kqbklu.png"
@@ -220,7 +223,7 @@
           </div>
       </div>
   
-      <div class="project-tile">
+      <div class="project-tile" data-aos="zoom-in">
           <h3 class="project-title">Markdown Previewer</h3>
           <a href="https://ginozega8smarkdownpreviewer.netlify.app" target="_blank"><img src="https://res.cloudinary.com/dgiqi5urn/image/upload/v1660436090/Portfolio/183264456-28cc3a25-471a-4cd6-af48-5504c340e321_tuhumz.png" alt="project"
             class="project-img"></a>
@@ -237,7 +240,7 @@
           </div>
       </div>
   
-      <div class="project-tile">
+      <div class="project-tile" data-aos="zoom-in">
         <h3 class="project-title">Random Phrase App</h3>
           <a href="https://ginozega8srandomphraser.netlify.app" target="_blank"><img
             src="https://res.cloudinary.com/dgiqi5urn/image/upload/v1660434033/Portfolio/183139112-ceea7e7b-e400-481e-9bfb-1243dca476e2_r4pcav.png"
@@ -250,7 +253,7 @@
           </div>
       </div>
   
-      <div class="project-tile">
+      <div class="project-tile" data-aos="zoom-in">
         <h3 class="project-title">React Wiki Searcher</h3>
           <a href="https://wikisearcherapp.netlify.app" target="_blank"><img
             src="https://res.cloudinary.com/dgiqi5urn/image/upload/v1658428700/Portfolio/Captura_de_pantalla_2022-07-21_153848_zgmxok.png"
@@ -355,4 +358,5 @@
         },
       });
 
+      AOS.init();
 </script>

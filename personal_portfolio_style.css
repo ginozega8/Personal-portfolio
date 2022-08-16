@@ -43,6 +43,12 @@ nav {
     z-index: 99;
     backdrop-filter: blur(8px);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s;
+}
+
+.hidden-navbar {
+    transform: translateY(-50px);
+    transition: all 0.5s;
 }
 
 nav img {
@@ -63,6 +69,32 @@ nav a:hover {
     transform: scale(1.2);
     transform: skew(15deg);
     color: #9c341d;
+}
+
+.btt-button {
+    display: block;
+    background-color: #131316a8;
+    border: 1px solid #131316a8;
+    border-radius: 50%;
+    padding: 10px;
+    position: fixed;
+    font-size: 32px;
+    color: #e94e2b;
+    top: 90vh;
+    right: 15px;
+    z-index: 99;
+    transition: all 0.5s;
+}
+
+@media (hover:hover) {
+    .btt-button:hover {
+        color: #131316;
+        background-color: #e94e2b;
+    }
+}
+
+.hidden-button {
+    transform: translateX(15vw);
 }
 
 a {
@@ -497,9 +529,6 @@ height: 50vh;
         
     }
 
-    .social_media a {
-        font-size: 24px;
-    }
 
     .about-text {
         padding: 0px 30px 0px 30px;
@@ -574,6 +603,19 @@ height: 50vh;
         position: static;
         margin-bottom: 100px;
         
+    }
+
+    .social_media {
+        flex-direction: column;
+        justify-items: left;
+    }
+
+
+    
+    .social_media button {
+        margin: 0;
+        margin-top: 30px;
+        padding: 10px;
     }
 }
 

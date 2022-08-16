@@ -2,6 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>Gino Zega - My personal portfolio</title>
+  <link rel="icon" href="https://res.cloudinary.com/dgiqi5urn/image/upload/v1660339203/Portfolio/gino_dev-removebg-preview_smaval.png" />
   <script src="https://kit.fontawesome.com/5970f31726.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="personal_portfolio_style.css">
@@ -26,10 +27,9 @@
     <a class="nav-link" href="#about-me">About Me</a>
     <a class="nav-link" href="#projects"> My Projects</a>
     <a class="nav-link" href="#contact">Contact</a>
-
-
   </nav>
 
+  <a class="btt-button" href="#welcome-section" title="Back to Top"><i class="fa-solid fa-angles-up"></i></a>
   <section id="welcome-section">
 
 
@@ -280,8 +280,8 @@
     <div class="social_media">
       <button><a href="https://github.com/ginozega8" target="_blank"><i class="bi bi-github"></i>Github</a></button>
 
-      <button><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/gino-zega-864ba2232/"
-          target="_blank">Linkedin</a></button>
+      <button><a href="https://www.linkedin.com/in/gino-zega-864ba2232/"
+          target="_blank"><i class="bi bi-linkedin"></i>Linkedin</a></button>
 
       <div class="tooltip">
         <input type="text" value="ginozega8@outlook.es" id="myInput" style="display: none;">
@@ -340,23 +340,51 @@
     var tooltip = document.getElementById("myTooltip2");
     tooltip.innerHTML = "Copy to clipboard";
   }
-  
-  var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        keyboard: {
-          enabled: true,
-        },
-        coverflowEffect: {
-          rotate: 30,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        },
-      });
 
-      AOS.init();
+  //Swiper Function
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    keyboard: {
+      enabled: true,
+    },
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+  });
+
+  //Animation on scroll initialize
+  AOS.init();
+
+  //Hide navbar on scroll down
+
+  let navBar = document.querySelector("#navbar");
+  console.log(navBar)
+  let lastScrollY = window.scrollY;
+  let backToTop = document.querySelector(".btt-button");
+
+  window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+      navBar.classList.add("hidden-navbar")
+      lastScrollY = window.scrollY;
+    } else {
+      navBar.classList.remove("hidden-navbar")
+      lastScrollY = window.scrollY;
+    }
+
+    //Hide back to top button on welcome section
+    if (window.scrollY > 812) {
+      backToTop.classList.remove("hidden-button")
+    } else {
+      backToTop.classList.add("hidden-button")
+    }
+  })
+
+
 </script>

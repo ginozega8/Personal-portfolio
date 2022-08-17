@@ -21,6 +21,9 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
+    
+
   <nav id="navbar">
     <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/v1660339203/Portfolio/gino_dev-removebg-preview_smaval.png" width="50" height="50" />
     <a class="nav-link" href="#welcome-section">Welcome</a>
@@ -28,6 +31,14 @@
     <a class="nav-link" href="#projects"> My Projects</a>
     <a class="nav-link" href="#contact">Contact</a>
   </nav>
+  <button class="ham-menu" onclick="showNav()"><i class="fa-solid fa-bars ham-icon"></i></button>
+  <div class="mobile-nav mobile-nav-hidden">
+    <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/v1660339203/Portfolio/gino_dev-removebg-preview_smaval.png" width="50" height="50" />
+    <a class="nav-link" href="#welcome-section" onclick="hideNav()"> Welcome</a>
+    <a class="nav-link" href="#about-me" onclick="hideNav()"> About Me</a>
+    <a class="nav-link" href="#projects" onclick="hideNav()"> My Projects</a>
+    <a class="nav-link" href="#contact" onclick="hideNav()"> Contact</a>
+  </div>
 
   <a class="btt-button" href="#welcome-section" title="Back to Top"><i class="fa-solid fa-angles-up"></i></a>
   <section id="welcome-section">
@@ -365,7 +376,6 @@
   //Hide navbar on scroll down
 
   let navBar = document.querySelector("#navbar");
-  console.log(navBar)
   let lastScrollY = window.scrollY;
   let backToTop = document.querySelector(".btt-button");
 
@@ -385,6 +395,29 @@
       backToTop.classList.add("hidden-button")
     }
   })
+
+  //hamburger menu
+  let hamButton = document.querySelector(".ham-icon")
+  let mobileNav = document.querySelector(".mobile-nav")
+  //toggle te navbar on the button's click
+  function showNav() {
+    if (mobileNav.classList.contains("mobile-nav-hidden")) {
+      mobileNav.classList.replace("mobile-nav-hidden", "mobile-nav-shown")
+      hamButton.classList.replace("fa-bars", "fa-xmark")
+    } else {
+      mobileNav.classList.replace("mobile-nav-shown", "mobile-nav-hidden")
+      hamButton.classList.replace("fa-xmark", "fa-bars")
+    }
+  }
+
+  //Hide navbar when a link is clicked
+  function hideNav() {
+    mobileNav.classList.replace("mobile-nav-shown", "mobile-nav-hidden")
+    hamButton.classList.replace("fa-xmark", "fa-bars")
+  }
+
+  
+  
 
 
 </script>

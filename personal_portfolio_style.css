@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -35,9 +36,8 @@ body::-webkit-scrollbar-thumb:hover {
 nav {
     width: 100vw;
     height: 6.5vh;
-    margin: 0px 0px 50px 0px;
     display: flex;
-    justify-content:right;
+    justify-content:center;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     z-index: 99;
@@ -77,7 +77,7 @@ nav {
 .mobile-nav-shown {
     background: #131316;
     width: 100vw;
-    height: 60vh;
+    height: 100px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -94,29 +94,25 @@ nav {
 }
 
 .hidden-navbar {
-    transform: translateY(-50px);
+    transform: translateY(-200px);
     transition: all 0.5s;
 }
 
-nav img {
-    position: fixed;
-    left: 20px;
-    color: #E94D2B;
-}
 
 nav a {
     padding: 5px 30px 5px 30px;
-    font-size: 1.5rem;
-    transition: 0.5s all;
+    align-self: center;
+    font-size: 24px;
+    transition: 0.3s all;
     color:#E94D2B;
-    font-family: 'Quantico', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-nav a:hover {
-    transform: scale(1.2);
-    transform: skew(15deg);
-    color: #9c341d;
+nav .nav-link:hover {
+    filter: brightness(0.7);
 }
+
 
 .btt-button {
     display: block;
@@ -141,7 +137,7 @@ nav a:hover {
 }
 
 .hidden-button {
-    transform: translateX(15vw);
+    transform: translateX(100vw);
 }
 
 a {
@@ -173,9 +169,6 @@ h1 {
     filter:saturate(1.2);
 }
 
-#profile-img:hover {
-    transform: scale(1.2);
-}
 
 /*video*/
 
@@ -246,6 +239,12 @@ video {
 .about-text hr {
     margin-bottom: 50px;
     border-color: #e96f05;
+}
+
+.about-logo {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
 }
 
 
@@ -389,7 +388,6 @@ left: 43vw;
 font-size: 1.2vw;
 word-spacing: 1.5vw;
 color: #a4a4a2;
-font-family: 'Silkscreen', cursive;
 }
 
 .more_projects {
@@ -517,9 +515,10 @@ font-family: 'Silkscreen', cursive;
 nav {
     height: 45px;
 }
-    nav a {
-        font-size: 16px;
-    }
+nav a {
+    font-size: 20px;
+}
+
 
 .project-img {
     width: 40vw;
@@ -563,7 +562,7 @@ height: 50vh;
 
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:757px) {
 
     nav {
         display: none;
@@ -581,7 +580,11 @@ height: 50vh;
         font-size: 40px;
     }
 
-
+    .about-logo {
+        width: 80vw;
+        height: 20rem;
+        overflow: hidden;
+    }
 
     #profile-img {
         width: 40%;

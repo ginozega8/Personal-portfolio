@@ -399,7 +399,12 @@ word-spacing: 1.5vw;
 color: #a4a4a2;
 }
 
-.more_projects {
+.button-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.button-more .more_projects {
     text-decoration: none;
     color: #ffffff;
     background-color: #E94D2B;
@@ -407,7 +412,6 @@ color: #a4a4a2;
     padding: 10px;
     font-size: 24px;
     position: relative;
-    left: 42vw;
     bottom: 20vh;
     transition: all 0.5s;
 }

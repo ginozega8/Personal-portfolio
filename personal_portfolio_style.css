@@ -16,6 +16,14 @@ p {
     z-index: 1;
 }
 
+#preloader{
+    background: #0d0b25 url(https://res.cloudinary.com/dgiqi5urn/image/upload/v1664809227/Portfolio/ginodev_gif_no_bg_m7rc6v.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 /*Custom Scrollbar*/
 body::-webkit-scrollbar {
     background-color: #0b0b0c;
